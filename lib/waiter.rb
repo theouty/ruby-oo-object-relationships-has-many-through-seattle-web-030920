@@ -21,7 +21,6 @@ class Waiter
   end 
   
   def best_tipper 
-    meals.each do |meal|
-     meal.max
-
+    meals.max_by{|number| number}
+  end 
 end
